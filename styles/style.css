@@ -1,156 +1,185 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .d-flex {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .flex-grow-1 {
-    flex: 1;
+  flex: 1;
 }
 
 /* Resto de estilos */
 body {
-    background: linear-gradient(to bottom, #ff9a8b, #ff6a88, #ff99ac);
-    color: #fff;
-    animation: fadeIn 1s ease-in-out;
-    box-sizing: border-box;  /*Cambia el comportamiento del modelo de caja CSS para que el padding y el borde se incluyan en el ancho y alto de los elementos*/
+  background: linear-gradient(to bottom, #ff9a8b, #ff6a88, #ff99ac);
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+  box-sizing: border-box; /*Cambia el comportamiento del modelo de caja CSS para que el padding y el borde se incluyan en el ancho y alto de los elementos*/
 }
 
 /* Header */
 header {
-    background: rgba(52, 58, 64, 0.8);
-    padding: 15px 0;
-    transition: background 0.3s;
+  background: rgba(52, 58, 64, 0.8);
+  padding: 15px 0;
+  transition: background 0.3s;
 }
 
 /* Nav */
 .nav-link {
-    color: rgb(12, 5, 5) !important;
-    transition: color 0.3s;
+  color: rgb(12, 5, 5) !important;
+  transition: color 0.3s;
 }
 .nav-link:hover {
-    color: #ffcccb !important;
+  color: #ffcccb !important;
 }
 
+main.container h2 {
+  margin-bottom: 2rem;
+}
+
+/* Estilo tarjetas */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-title {
+  font-size: 1.5rem;
+  color: #ffcccb;
+}
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
 
 /* Footer */
 footer {
-    background: rgba(52, 58, 64, 0.8);
-    text-align: center;
-    color: white;
-    width: 100%; 
-    font-size: 12px;
-    padding: 5px 0;
-    line-height: 1.5;  /* Ajusta la altura de línea para un aspecto más limpio */
-    margin-top: 1rem;   
+  background: rgba(52, 58, 64, 0.8);
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 12px;
+  padding: 5px 0;
+  line-height: 1.5; /* Ajusta la altura de línea para un aspecto más limpio */
+  margin-top: 1rem;
 }
 
 /* Index */
 .intro {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-family: "roboto", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "roboto", sans-serif;
 }
 .foto-perfil {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 1rem;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 .card img {
-    width: 100%;
-    border-radius: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 /* Aboutme*/
 .intro {
-    background: linear-gradient(to bottom right, #ff9a8b, #ff6a88, #ff99ac); 
-    color: #fff; 
-    padding: 2rem; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin-top: 2rem; /* Margen superior */
-    max-width: 800px; /* Ancho maximo */
-    margin-left: auto; /* Centrando horizontalmente */
-    margin-right: auto; 
+  background: linear-gradient(to bottom right, #ff9a8b, #ff6a88, #ff99ac);
+  color: #fff;
+  padding: 2rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-top: 2rem; /* Margen superior */
+  max-width: 800px; /* Ancho maximo */
+  margin-left: auto; /* Centrando horizontalmente */
+  margin-right: auto;
 }
 .intro h2 {
-    font-size: 2.5rem; 
-    margin-bottom: 1.5rem; /* Margen inferior del titulo */
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem; /* Margen inferior del titulo */
 }
 .intro p {
-    font-size: 1.2rem;
-    font-family: "roboto", sans-serif;
-    line-height: 1.8; /* Altura de linea */
-    margin-bottom: 1rem; /* Margen inferior del parrafo */
+  font-size: 1.2rem;
+  font-family: "roboto", sans-serif;
+  line-height: 1.8; /* Altura de linea */
+  margin-bottom: 1rem; /* Margen inferior del parrafo */
 }
 .intro p:last-child {
-    margin-bottom: 0; /* Remuve margen inferior del ultimo párrafo */
+  margin-bottom: 0; /* Remuve margen inferior del ultimo párrafo */
 }
 
 /* Estilos para la sección de habilidades */
 .habilidades {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .card-habilidades {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan en varias lineas */
-    justify-content: space-around; /* Distribuye los elementos hijos uniformemente con espacio alrededor */
-    gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan en varias lineas */
+  justify-content: space-around; /* Distribuye los elementos hijos uniformemente con espacio alrededor */
+  gap: 1.5rem;
 }
 .habilidad {
-    background: rgba(255, 255, 255, 0.1);/* Fondo blanco semitransparente */
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde semitransparente */
-    backdrop-filter: blur(5px); /* Efecto de desenfoque en el fondo detrás del elemento */
-     /* Añade espaciado interno alrededor del contenido */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del elemento */
-    text-align: center;
-    max-width: 200px;
-    margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Borde semitransparente */
+  backdrop-filter: blur(
+    5px
+  ); /* Efecto de desenfoque en el fondo detrás del elemento */
+  /* Añade espaciado interno alrededor del contenido */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del elemento */
+  text-align: center;
+  max-width: 200px;
+  margin-bottom: 1rem;
 }
 .habilidad i {
-    font-size: 3rem; /* Tamaño de fuente para los iconos */
-    color: #ff6a88; /* Color para los iconos */
+  font-size: 3rem; /* Tamaño de fuente para los iconos */
+  color: #ff6a88; /* Color para los iconos */
 }
 .habilidad h3 {
-    margin: 1rem 0 0.5rem;/* Margenes superior, inferior y laterales del titulo */
-    font-size: 1.5rem; /* Tamaño de fuente para los títulos */
+  margin: 1rem 0 0.5rem; /* Margenes superior, inferior y laterales del titulo */
+  font-size: 1.5rem; /* Tamaño de fuente para los títulos */
 }
 .habilidad p {
-    font-size: 1rem;
-    line-height: 1.5;/* Altura de línea para mejorar la legibilidad */
-    color: #fff;
+  font-size: 1rem;
+  line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+  color: #fff;
 }
 
 /* Animaciones */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Diseño responsive */
 @media (max-width: 768px) {
-    .intro {
-        padding: 1rem; /* Ajuste de padding para pantallas pequeñas */
-    }
-    .intro h2 {
-        font-size: 2rem; /* Ajuste de tamaño de fuente del título para pantallas pequeñas */
-    }
-    .intro p {
-        font-size: 1rem; 
-    }
+  .intro {
+    padding: 1rem; /* Ajuste de padding para pantallas pequeñas */
+  }
+  .intro h2 {
+    font-size: 2rem; /* Ajuste de tamaño de fuente del título para pantallas pequeñas */
+  }
+  .intro p {
+    font-size: 1rem;
+  }
 }
